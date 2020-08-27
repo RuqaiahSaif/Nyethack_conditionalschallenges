@@ -2,6 +2,7 @@ fun main() {
     var healthPoints: Int = 100
     val playerName = "Madrigal"
     var isbless: Boolean = true
+    val Karma=(Math.pow(Math.random(),(110 - healthPoints)/100.0)*20).toInt()
     when (healthPoints) {
         100 -> println("Madrigal is an excellent condition")
         in 90..99 -> println("Madrigal has few scratches")
@@ -23,4 +24,15 @@ fun main() {
     println(check(healthPoints))
     println(playerName)
     println(healthPoints)
+
+    when(Karma){
+        in 0..5 -> println("red")
+        in 6..10 -> println("orange")
+        in 11..15 -> println("purple")
+        in 16..20 -> println("green")
+
+    }
 }
+
+
+
